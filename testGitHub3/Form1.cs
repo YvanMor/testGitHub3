@@ -16,10 +16,13 @@ namespace testGitHub3
         {
             InitializeComponent();
         }
-
+        private void MessageBonjour()
+        {
+            MessageBox.Show("Bonjour à tous");
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("bonjour à tous !");
+            MessageBonjour();
         }
     }
 }
