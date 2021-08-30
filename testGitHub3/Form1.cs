@@ -18,7 +18,7 @@ namespace testGitHub3
         }
         private void MessageBonjour()
         {
-            MessageBox.Show("Bonjour à tous");
+            MessageBox.Show("Bonjour à tous !!!");
         }
         private void button1_Click(object sender, EventArgs e)
         {
