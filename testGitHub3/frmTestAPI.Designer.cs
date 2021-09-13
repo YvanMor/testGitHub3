@@ -36,6 +36,7 @@
             // 
             // btnTest
             // 
+<<<<<<< Updated upstream
             this.btnTest.Location = new System.Drawing.Point(39, 35);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(163, 23);
@@ -43,6 +44,15 @@
             this.btnTest.Text = "btnTest";
             this.btnTest.UseVisualStyleBackColor = true;
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+=======
+            this.button1.Location = new System.Drawing.Point(91, 75);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btn3API_Win_Click);
+>>>>>>> Stashed changes
             // 
             // btnTestAPI_Win
             // 
