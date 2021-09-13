@@ -51,24 +51,24 @@ namespace testGitHub3
         private void btnTest2API_Win_Click(object sender, EventArgs e)
         {
             uint attibuts;
-            attibuts = GetFileAttributesA("C:/Y/1.txt");
-            string att = "";
+            string lesAttributs = ""; 
+            attibuts = GetFileAttributesA("C:/Y/1.txt"); // ou autre fichier
             System.Windows.Forms.MessageBox.Show(attibuts.ToString());
             if ((attibuts & FILE_ATTRIBUTE_READONLY) == 0x1)
-            {
-                att += "lecture seule, ";
+            { 
+                lesAttributs += "Lecture seule, ";
             }
-            if ((attibuts & 0x20) == 0x20)
+            if ((attibuts & 0x20) == 0x20)              // 0x20 hexadécimal = 32 en décimal
             {
-                att += "archive, ";
+                lesAttributs += "Archive, ";
             }
-            System.Windows.Forms.MessageBox.Show(att);
+            MessageBox(new IntPtr(0), lesAttributs, "Attibuts ", 0); // MessageBox système
         }
 
         private void btn3API_Win_Click(object sender, EventArgs e)
         {
             // WinExec("cmd /c rmdir c:\\temp /s/q", SW_HIDE);
-            uint marche = WinExec("C:\\Windows\\notepad.exe C:/Y/1.txt", SW_SHOW);
+            uint marche = WinExec("C:\\Windows\\notepad.exe", SW_SHOW);
         }
     }
 }
