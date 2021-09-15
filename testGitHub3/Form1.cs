@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using testGitHub3.Classes;
 
 namespace testGitHub3
 {
@@ -16,13 +17,10 @@ namespace testGitHub3
         {
             InitializeComponent();
         }
-        private void MessageBonjour()
-        {
-            MessageBox.Show("Bonjour à tous");
-        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBonjour();
+            Messages.direBonjour("à tous! ☺☺☺☺☺");
         }
     }
 }
